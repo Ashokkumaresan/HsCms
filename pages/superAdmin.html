@@ -1,0 +1,24 @@
+<div class="login">
+<div class="header-strip">
+<div class="login-holder">
+	<div class="logo-holder">
+	</div>	
+    <div class="loginbody-holder">
+	<form name="myForm" ng-submit="submit()">
+	 <ul>
+	   <li ng-class="{'has-error':myForm.username.$invalid && !myForm.username.$pristine}">
+		   <input type="email" name="username" placeholder="User Name" ng-model="username" required  />
+	   </li>
+	   <li ng-class="{'has-error':myForm.password.$invalid && !myForm.password.$pristine}">
+	       <input type="password" name="password" placeholder="Password" ng-model="password" required />
+	   </li>
+	   <li><input type="submit" name="submit" value="Submit" /> </li>
+	 </ul>
+	 </form>
+	</div>	
+	<p ng-show="myForm.username.$invalid && !myForm.username.$pristine">Username is required</p>
+	<p ng-show="myForm.password.$invalid && !myForm.password.$pristine">Password is required</p>
+	</div>
+</div>
+		
+</div>

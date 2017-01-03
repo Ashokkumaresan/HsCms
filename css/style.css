@@ -1,0 +1,76 @@
+body{
+	margin:0;
+	padding:0;
+}
+.login{
+	    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+		background:#22313a;
+}
+.header-strip{
+	background:#1e2a31;
+	height:200px;
+	width:100%;
+	float:left;
+}
+.login-holder{
+	width:350px;	
+	height:400px;
+	margin:7.38% auto;	
+	position:relative;
+}
+.logo-holder{
+	background:#22313a;
+	width:inherit;	
+	height:100px;	
+	float:left
+}
+.loginbody-holder{
+	background:#2b3942;
+	float:left;
+	height:250px;
+	width:inherit;
+	padding-top:25px;
+}
+.loginbody-holder ul{
+	list-style:none;
+}
+.has-error{
+	border-bottom: 1px solid #ff0000!important;
+}
+.loginbody-holder ul li{
+	    width: 100%;
+    margin-left: -20px;
+		padding: 20px 10px;
+	border-bottom: 1px solid #aaa;
+}
+
+.loginbody-holder ul li:last-child{
+	border:none;
+}
+.loginbody-holder ul li input[type="email"],.loginbody-holder ul li input[type="password"]{
+	border:none;
+	background:transparent;
+	color:#fff;
+    text-align: center;
+	outline:none;
+	font-family: Arial Narrow;
+}
+.loginbody-holder ul li input[type="submit"]{
+	    border: none;
+    color: #fff;
+    background: #22313a;
+    padding: 10px 20px;
+	outline:none;
+	box-shadow: 0px 0px 3px 0px #eee;
+}
+.login-holder p{
+	color:#fff;
+	font-family: Arial Narrow;
+    padding-top: 20px;
+    float: left;
+    width: 350px;
+}
