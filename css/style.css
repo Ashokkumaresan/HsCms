@@ -7,6 +7,7 @@ body{
     overflow: auto;
     text-align: center;
 		background:#22313a;
+		font-family: Arial Narrow;
 }
 .login{
 	  
@@ -14,6 +15,12 @@ body{
 .header-strip{
 	background:#1e2a31;
 	height:300px;
+	width:100%;
+	float:left;
+}
+.dashboardheader-strip{
+	background:#1e2a31;
+	height:250px;
 	width:100%;
 	float:left;
 }
@@ -74,4 +81,57 @@ body{
     padding-top: 20px;
     float: left;
     width: 350px;
+}
+.search-holder{
+	margin-top: 30px;
+}
+.search-holder h2{
+	font-family: Arial Narrow;
+    color: #fff;
+}
+.search-holder input[type="text"]{
+	    width: 100%;
+    background: #2b3942;
+    border: 0;
+    font-family: Arial Narrow;
+    font-size: 18px;
+    padding: 16px 0px;
+    border-radius: 2px;
+    text-indent: 20px;
+    outline: none;
+    color: #fff;
+}
+.search-holder .login-icon{
+	width:60px;
+}
+.menu-holder{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	position: relative;
+	padding-top: 30px;
+}
+.menu-holder ul{
+	list-style: none;
+}
+.menu-holder ul li{
+	color: #8a9ba1;
+	 font-family: Arial Narrow;	
+	     padding-bottom: 35px;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+.menu-holder ul li span{
+	    color: #fff;
+    font-size: 18px;
+    float: left;
+    padding-right: 25px;
+}
+.domain-list{
+	    background: #2b3942;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 2px;
 }
