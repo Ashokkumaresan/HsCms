@@ -2,22 +2,34 @@
 <div class="header-strip">
 <div class="login-holder">
 	<div class="logo-holder">
+	<ng-sparkline>Hello World</ng-sparkline>
+	<!--<div ng-sparkline></div>
+	<div class=ng-sparkline></div> -->
 	</div>	
     <div class="loginbody-holder">
 	<form name="myForm" ng-submit="submit()">
 	 <ul>
-	   <li ng-class="{'has-error':myForm.username.$invalid && !myForm.username.$pristine}">
+	   <li ng-class="{'has-error':myForm.username.$invalid && myForm.username.$dirty}">
 		   <input type="email" name="username" placeholder="User Name" ng-model="username" required  />
 	   </li>
 	   <li ng-class="{'has-error':myForm.password.$invalid && !myForm.password.$pristine}">
 	       <input type="password" name="password" placeholder="Password" ng-model="password" required />
 	   </li>
+	   <li>
+	       <input type="text" name="security" placeholder="Security Code" ng-model="security" ng-maxlength=4 check-code />
+	   </li>
 	   <li><input type="submit" name="submit" value="Submit" /> </li>
+	      <li><input type="button" name="test" value="Test" ng-click="Test()" /> </li>
+		  
 	 </ul>
 	 </form>
 	</div>	
 	<p ng-show="myForm.username.$invalid && !myForm.username.$pristine">Username is required</p>
 	<p ng-show="myForm.password.$invalid && !myForm.password.$pristine">Password is required</p>
+	<p ng-show="myForm.security.$error.checkCode">Invalid Code</p>
+	<p ng-show="myForm.security.$error.checkSqr">Sqrt Code</p>
+	<p ng-show="myForm.security.$error.maxlength">Max length is 4</p>
+	<p ng-show="myForm.username.$error.email">Invalid Email</p>
 	</div>
 </div>
 		
