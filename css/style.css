@@ -378,4 +378,6 @@ padding: 10px 0!important;
 .action-section input[type="text"]{
 	    float: left;
     padding: 10px 25px;
+    border: 1px solid #fff;    
+    margin-left: 15px;
 }
